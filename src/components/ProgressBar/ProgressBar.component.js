@@ -2,20 +2,17 @@ import React, { Component } from "react";
 import checkic from "../../img/check-ic.png";
 
 export default class ProgressBar extends Component {
-  componentDidMount() {
-    console.log("ALL", this.props.allSteps);
-    console.log("CURRENT", this.props.currentStep);
-  }
-
   getSteps() {
     let current = 0;
     const lastStep = this.props.allSteps.length - 1;
+
     //CHECK WHICH STEP WE ARE ON
     for (let i = 0; i < lastStep + 1; i++) {
       if (this.props.currentStep === this.props.allSteps[i]) {
         current = i;
       }
     }
+
     return this.props.allSteps.map((step, i) => {
       if (i === lastStep) {
         return;
@@ -43,7 +40,7 @@ export default class ProgressBar extends Component {
     return (
       <div className="progressBar">
         <div className="bar primary">
-          <div></div>
+          <div />
         </div>
         {this.getSteps()}
       </div>
