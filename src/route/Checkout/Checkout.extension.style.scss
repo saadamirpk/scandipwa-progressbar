@@ -1,0 +1,84 @@
+.Checkout {
+  &::before {
+    display: none;
+  }
+}
+
+.progressBar {
+  background: var(--breadcrumbs-background);
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    div {
+      height: 50px;
+      width: 50px;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 15px;
+        width: 15px;
+      }
+      p {
+        margin: 0;
+        line-height: 0;
+      }
+    }
+  }
+  .bar {
+    height: 5px;
+    width: 100%;
+    margin-bottom: 30px;
+    flex: 1;
+    div {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@keyframes fade {
+  0% {
+  }
+  100% {
+    background-color: $default-primary-dark-color;
+  }
+}
+
+.primary {
+  div {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    p {
+      color: $white;
+    }
+  }
+  p {
+    font-size: small;
+    font-weight: 700;
+    font-family: $font-muli;
+  }
+}
+
+.grey {
+  div {
+    background-color: rgb(201, 201, 201);
+    p {
+      color: $default-secondary-dark-color;
+    }
+  }
+  p {
+    font-size: small;
+    color: $default-secondary-dark-color;
+    font-family: $font-muli;
+  }
+}
