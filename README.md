@@ -1,49 +1,12 @@
-# Getting Started with Create ScandiPWA App
+# ScandiPWA App - Progress Bar Test/Assignment
 
-This package contains new ScandiPWA theme sources. Your parent theme is `@scandipwa/scandipwa`.
+This is the solution for progress bar assignment working with a custom scandipwa app.
 
-## Installation
+<img width="698" alt="Screenshot 2022-12-21 at 7 17 47 PM" src="https://user-images.githubusercontent.com/59224810/208926405-aac01c00-8b2e-4599-98aa-ba445b21d255.png">
 
-Before you start, make sure to install package dependencies.
+This project enhances the user experience of the checkout process in the ScandiPWA app by adding a progress bar. The progress bar displays the current step of the checkout process and the total number of steps, providing a visual indication of the user's progress through the checkout process. This helps the user understand their progress and provides a sense of how much further they have to go before completing their purchase.
 
-To do this, use `yarn` or `npm i` command.
+The progress bar is fully automatic, The color and style matches your app's branding. It is also responsive, ensuring that it looks great on all devices.
+As well as no changes are required if checkout steps are increased or decreased from admin panel.
 
-### Recommended packages
-
-For the best expirience, install `scandipwa-cli` package globally. To do this, run:
-
-```bash
-npm i -g scandipwa-cli
-```
-
-## Available Scripts
-
-### `npm run start` or `yarn start`
-
-Starts the development server.
-
-**Features**:
-
-- The page will reload if you make edits.
-- You will also see any lint errors in the console.
-
-### `npm run build` or `yarn build`
-
-Bundles the app into static files for production.
-
-> **Note**: To bundle your application as valid Magento 2 theme use `--magento` option.
-
-**Features**:
-
-- The build is minified and the filenames include the hashes.
-- The build is optimized for the best performance
-
-## Extensions
-
-To install an extension, run following command:
-
-```bash
-scandipwa extension <EXTENSION NAME>
-```
-
-> **Note**: to create new extension add `--create` option after the command. This will create a new extension package under `packages` folder.
+This feature is easy to implement and requires minimal setup. Simply include the provided code in your ScandiPWA app and you're ready to go! Enjoy a more streamlined checkout experience for your users with this simple yet powerful feature.
